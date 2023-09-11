@@ -3,10 +3,12 @@ $(document).ready(function () {
     console.log("position: ", $("#dogeMemePic").position());
   });
 
+  let updateMessage;
+
   $("#dogeMemePic").draggable({
     stop: function () {
       if ($("#dogeMemePic").position().left > 500) {
-        text("WOW MUCH THANK FOR HELP");
+        updateMessage = "WOW MUCH THANK FOR HELP";
 
         $("#dogeMemePic").attr(
           "src",
@@ -16,10 +18,10 @@ $(document).ready(function () {
         $("#dogeMemePic").position().left > 300 &&
         $("#dogeMemePic").position().left < 500
       ) {
-        alert("keep going!");
+        updateMessage = "keep going!";
         $("#dogeMemePic").attr("src", "https://i.redd.it/8gva3ksucpf01.jpg");
       } else {
-        alert("Blast off!");
+        updateMessage = "Blast off!";
         $("#dogeMemePic").attr(
           "src",
           "https://media.tenor.com/images/7e32c63e3ec91af70a042e6c776557ea/tenor.gif"
