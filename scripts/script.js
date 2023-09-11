@@ -6,7 +6,7 @@ $(document).ready(function () {
   $("#dogeMemePic").draggable({
     stop: function () {
       if ($("#dogeMemePic").position().left > 500) {
-        alert("WOW MUCH THANK FOR HELP");
+        text("WOW MUCH THANK FOR HELP");
 
         $("#dogeMemePic").attr(
           "src",
