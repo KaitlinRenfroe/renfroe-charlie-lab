@@ -10,6 +10,8 @@ $(document).ready(function () {
       if ($("#dogeMemePic").position().left > 500) {
         updateMessage = "WOW MUCH THANK FOR HELP";
 
+        $("#gameProgress").text(updateMessage);
+
         $("#dogeMemePic").attr(
           "src",
           "https://getwallpapers.com/wallpaper/full/d/9/e/9822.jpg"
@@ -19,9 +21,16 @@ $(document).ready(function () {
         $("#dogeMemePic").position().left < 500
       ) {
         updateMessage = "keep going!";
+        $("#gameProgress").text(updateMessage);
+        
         $("#dogeMemePic").attr("src", "https://i.redd.it/8gva3ksucpf01.jpg");
-      } else {
+        
+      } 
+      
+      else {
         updateMessage = "Blast off!";
+        $("#gameProgress").text(updateMessage);
+        
         $("#dogeMemePic").attr(
           "src",
           "https://media.tenor.com/images/7e32c63e3ec91af70a042e6c776557ea/tenor.gif"
